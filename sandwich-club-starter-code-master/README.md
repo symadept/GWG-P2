@@ -24,3 +24,22 @@ Download the [Sandwich Club app starter code.](https://github.com/udacity/sandwi
 Design the layout for the detail activity so the different elements
 display in a sensible way. Implement the JSON parsing in JsonUtils so it
 produces a Sandwich Object that can be used to populate the UI that you designed.
+
+# My Section
+## Structure of the Project
+- Picaso to load images
+- No 3rd party libs to parse JSON response
+
+## What I learnt?
+### Hardcoded strings must be PSF (Public Static Final) Consts
+### Use Opt methods vs Get on JSONObject
+### NULL Checks & Catching Exceptions wherever necessary
+### Layout Bindings for clean code
+### Code for all range of devices - Small - Large
+- Provide Scrollview for scrolling the data
+- Images must be planned for multiple displays
+### Handle orientational changes
+- onSaveInstanceState/onRestoreInstanceState
+### Handle failure conditions and intermediate phases
+- Picaso supports Placeholder image which can help user to see something coming than Blank space
+- Picaso do support Error image instead of showing Blank space
