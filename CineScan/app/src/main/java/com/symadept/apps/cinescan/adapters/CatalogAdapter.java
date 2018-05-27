@@ -19,6 +19,7 @@ import com.symadept.apps.cinescan.models.Results;
  * Created by shaimu8 on 5/20/18.
  */
 
+@SuppressWarnings("SpellCheckingInspection")
 public class CatalogAdapter extends RecyclerView.Adapter<CatalogAdapter.CatalogAdapterViewHolder> {
     private CatalogResponse response;
     private Context context;
@@ -55,8 +56,8 @@ public class CatalogAdapter extends RecyclerView.Adapter<CatalogAdapter.CatalogA
         public CatalogAdapterViewHolder(View view) {
             super(view);
 
-            tv_android = (TextView)view.findViewById(R.id.catalog_row_layout_tv);
-            img_android = (ImageView) view.findViewById(R.id.catalog_row_layout_iv);
+            tv_android = view.findViewById(R.id.catalog_row_layout_tv);
+            img_android = view.findViewById(R.id.catalog_row_layout_iv);
             img_android.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

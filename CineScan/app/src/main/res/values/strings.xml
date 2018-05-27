@@ -3,7 +3,10 @@
     <string name="menu_popular" translatable="false">Most Popular</string>
     <string name="menu_rated" translatable="false">High Rated</string>
     <string name="overview_label" translatable="false">Overview</string>
-    <string name="detail_poster_content_desc" translatable="false">Movie Poster</string>
+    <string name="detail_poster_content_desc" translatable="true">Movie Poster</string>
+    <string name="row_item_description">Movie Poster</string>
     <string name="key_detail_extras" translatable="false">KeyDetailExtras</string>
+    <string name="open_bracket" translatable="false">(</string>
+    <string name="close_bracket" translatable="false">)</string>
 
 </resources>

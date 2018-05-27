@@ -59,7 +59,7 @@ public class CatalogActivity extends AppCompatActivity {
     }
 
     private void initViews(){
-        recyclerView = (RecyclerView)findViewById(R.id.card_recycler_view);
+        recyclerView = findViewById(R.id.card_recycler_view);
         recyclerView.setHasFixedSize(true);
         RecyclerView.LayoutManager layoutManager = new GridLayoutManager(getApplicationContext(),2);
         recyclerView.setLayoutManager(layoutManager);

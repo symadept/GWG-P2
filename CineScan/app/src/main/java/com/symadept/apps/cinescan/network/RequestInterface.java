@@ -9,6 +9,7 @@ import retrofit2.http.GET;
  * Created by shaimu8 on 5/20/18.
  */
 
+@SuppressWarnings("ALL")
 public interface RequestInterface {
 //    @GET("3/discover/movie?api_key=API_KEY&language=en-US&sort_by=popularity.desc&include_adult=true&include_video=false&page=1")
     @GET("/3/movie/popular?api_key=API_KEY&language=en-US&page=1")

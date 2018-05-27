@@ -14,11 +14,13 @@
         <activity android:name=".activities.CatalogActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="cinescan"
+                    android:host="home" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.MovieDetailActivity"></activity>
+        <activity android:name=".activities.MovieDetailActivity"/>
     </application>
 
 </manifest>

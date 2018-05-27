@@ -50,7 +50,7 @@ public class Results implements Parcelable {
         poster_path = parcel.readString();
         original_language = parcel.readString();
         original_title = parcel.readString();
-        genre_ids = new ArrayList<Integer>();
+        genre_ids = new ArrayList<>();
         parcel.readList(genre_ids, List.class.getClassLoader());
         backdrop_path = parcel.readString();
         adult = parcel.readByte() == 1;

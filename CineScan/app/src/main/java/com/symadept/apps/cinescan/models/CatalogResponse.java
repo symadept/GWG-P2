@@ -6,6 +6,7 @@ import java.util.List;
  * Created by shaimu8 on 5/20/18.
  */
 
+@SuppressWarnings("SpellCheckingInspection")
 public class CatalogResponse {
     public int page;
     public int total_results;
