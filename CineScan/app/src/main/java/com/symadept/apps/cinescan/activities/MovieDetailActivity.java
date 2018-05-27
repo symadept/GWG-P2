@@ -5,6 +5,7 @@ import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.widget.RatingBar;
 
 import com.squareup.picasso.Callback;
 import com.squareup.picasso.Picasso;
@@ -59,6 +60,9 @@ public class MovieDetailActivity extends AppCompatActivity {
 
         mBinding.movieDetailOverviewHeaderTv.setText(R.string.overview_label);
         mBinding.movieDetailOverviewMessageTv.setText(mBinding.getMovieDetail().overview);
+
+        mBinding.ratingBar.setRating((float) mBinding.getMovieDetail().vote_average/2);
+        mBinding.voteCountTv.setText("(" + mBinding.getMovieDetail().vote_count+ ")");
     }
 
     public static String formateDateFromstring(String inputFormat, String outputFormat, String inputDate){
