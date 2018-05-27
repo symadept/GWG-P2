@@ -25,7 +25,7 @@ public class MovieDetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         mBinding = DataBindingUtil.setContentView(this, R.layout.activity_movie_detail);
         Intent intent = getIntent();
-        Results movieDetail = intent.getExtras().getParcelable("movieDetail");
+        Results movieDetail = intent.getExtras().getParcelable(getResources().getString(R.string.key_detail_extras));
         mBinding.setMovieDetail(movieDetail);
 
         initViews();

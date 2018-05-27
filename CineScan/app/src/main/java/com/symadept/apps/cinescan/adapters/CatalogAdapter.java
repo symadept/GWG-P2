@@ -48,7 +48,7 @@ public class CatalogAdapter extends RecyclerView.Adapter<CatalogAdapter.CatalogA
         return response.results.size();
     }
 
-    public class CatalogAdapterViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+    public class CatalogAdapterViewHolder extends RecyclerView.ViewHolder {
         private TextView tv_android;
         private ImageView img_android;
 
@@ -64,20 +64,10 @@ public class CatalogAdapter extends RecyclerView.Adapter<CatalogAdapter.CatalogA
                     Results movieDetail = response.results.get(position);
 
                     Intent myIntent = new Intent(context, MovieDetailActivity.class);
-                    myIntent.putExtra("movieDetail", movieDetail); //Optional parameters
+                    myIntent.putExtra(context.getResources().getString(R.string.key_detail_extras), movieDetail); //Optional parameters
                     context.startActivity(myIntent);
                 }
             });
-        }
-
-        @Override
-        public void onClick(View v) {
-            int position = getAdapterPosition();
-            Results movieDetail = response.results.get(position);
-
-            Intent myIntent = new Intent(context, MovieDetailActivity.class);
-            myIntent.putExtra("movieDetail", movieDetail); //Optional parameters
-            context.startActivity(myIntent);
         }
     }
 }

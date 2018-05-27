@@ -1,8 +1,9 @@
 <resources>
     <string name="app_name">CineScan</string>
-    <string name="menu_popular">Most Popular</string>
-    <string name="menu_rated">High Rated</string>
-    <string name="overview_label">Overview</string>
-    <string name="detail_poster_content_desc">Movie Poster</string>
+    <string name="menu_popular" translatable="false">Most Popular</string>
+    <string name="menu_rated" translatable="false">High Rated</string>
+    <string name="overview_label" translatable="false">Overview</string>
+    <string name="detail_poster_content_desc" translatable="false">Movie Poster</string>
+    <string name="key_detail_extras" translatable="false">KeyDetailExtras</string>
 
 </resources>

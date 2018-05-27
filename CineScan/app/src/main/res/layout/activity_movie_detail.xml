@@ -110,7 +110,7 @@
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/movie_detail_poster_iv"
+            app:layout_constraintTop_toBottomOf="@+id/vote_count_tv"
             tools:text="Overview" />
 
 

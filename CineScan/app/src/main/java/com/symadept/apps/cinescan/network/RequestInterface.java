@@ -10,7 +10,7 @@ import retrofit2.http.GET;
  */
 
 public interface RequestInterface {
-//    @GET("3/discover/movie?api_key=888eae0cd0bf59076e7d4c7fdbce0d24&language=en-US&sort_by=popularity.desc&include_adult=true&include_video=false&page=1")
+//    @GET("3/discover/movie?api_key=API_KEY&language=en-US&sort_by=popularity.desc&include_adult=true&include_video=false&page=1")
     @GET("/3/movie/popular?api_key=API_KEY&language=en-US&page=1")
     Call<CatalogResponse> getMostPopularMovies();
 
