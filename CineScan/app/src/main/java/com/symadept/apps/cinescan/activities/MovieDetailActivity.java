@@ -35,23 +35,21 @@ public class MovieDetailActivity extends AppCompatActivity {
         Picasso.with(this)
                 .load(imageUrl)
                 .resize(240, 350)
-                .into(mBinding.movieDetailBackgroundIv, new Callback() {
-                    @Override
-                    public void onSuccess() {
-                        populateTopLayerViews();
-                    }
-
-                    @Override
-                    public void onError() {
-
-                    }
-                });
+                .placeholder(R.mipmap.backddrop_image_placeholder)
+                .error(R.mipmap.backdrop_image_not_available)
+                .into(mBinding.movieDetailBackgroundIv);
+        populateTopLayerViews();
     }
 
     @SuppressWarnings("SpellCheckingInspection")
     private void populateTopLayerViews() {
         String imageUrl = "https://image.tmdb.org/t/p/" + "w500" + mBinding.getMovieDetail().poster_path;
-        Picasso.with(this).load(imageUrl).resize(240, 350).into(mBinding.movieDetailPosterIv);
+        Picasso.with(this)
+                .load(imageUrl)
+                .resize(240, 350)
+                .placeholder(R.mipmap.poster_image_placeholder)
+                .error(R.mipmap.poster_image_not_available)
+                .into(mBinding.movieDetailPosterIv);
 
         mBinding.movieDetailTitleTv.setText(mBinding.getMovieDetail().title);
 

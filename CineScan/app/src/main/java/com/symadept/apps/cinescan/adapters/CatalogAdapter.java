@@ -41,7 +41,12 @@ public class CatalogAdapter extends RecyclerView.Adapter<CatalogAdapter.CatalogA
 //        holder.tv_android.setText(android.get(position).getAndroid_version_name());
         Results item = response.results.get(position);
         String imageUrl = "https://image.tmdb.org/t/p/" + "w500" + item.poster_path;
-        Picasso.with(context).load(imageUrl).resize(240, 350).into(holder.img_android);
+        Picasso.with(context)
+                .load(imageUrl)
+                .resize(240, 350)
+                .placeholder(R.mipmap.poster_image_placeholder)
+                .error(R.mipmap.poster_image_not_available)
+                .into(holder.img_android);
     }
 
     @Override
