@@ -8,5 +8,6 @@
     <string name="key_detail_extras" translatable="false">KeyDetailExtras</string>
     <string name="open_bracket" translatable="false">(</string>
     <string name="close_bracket" translatable="false">)</string>
+    <string name="image_url_width_factor" translatable="false">w500</string>
 
 </resources>

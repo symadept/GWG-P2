@@ -16,6 +16,8 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import static com.symadept.apps.cinescan.utils.Utils.getImageUriForPath;
+
 public class MovieDetailActivity extends AppCompatActivity {
     public ActivityMovieDetailBinding mBinding;
 
@@ -31,9 +33,8 @@ public class MovieDetailActivity extends AppCompatActivity {
     }
 
     private void initViews() {
-        String imageUrl = "https://image.tmdb.org/t/p/" + "w500" + mBinding.getMovieDetail().backdrop_path;
         Picasso.with(this)
-                .load(imageUrl)
+                .load(getImageUriForPath(this, mBinding.getMovieDetail().backdrop_path))
                 .resize(240, 350)
                 .placeholder(R.mipmap.backddrop_image_placeholder)
                 .error(R.mipmap.backdrop_image_not_available)
@@ -43,9 +44,8 @@ public class MovieDetailActivity extends AppCompatActivity {
 
     @SuppressWarnings("SpellCheckingInspection")
     private void populateTopLayerViews() {
-        String imageUrl = "https://image.tmdb.org/t/p/" + "w500" + mBinding.getMovieDetail().poster_path;
         Picasso.with(this)
-                .load(imageUrl)
+                .load(getImageUriForPath(this, mBinding.getMovieDetail().poster_path))
                 .resize(240, 350)
                 .placeholder(R.mipmap.poster_image_placeholder)
                 .error(R.mipmap.poster_image_not_available)

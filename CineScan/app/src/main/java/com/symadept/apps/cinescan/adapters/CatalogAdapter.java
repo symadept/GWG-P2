@@ -15,6 +15,8 @@ import com.symadept.apps.cinescan.activities.MovieDetailActivity;
 import com.symadept.apps.cinescan.models.CatalogResponse;
 import com.symadept.apps.cinescan.models.Results;
 
+import static com.symadept.apps.cinescan.utils.Utils.getImageUriForPath;
+
 /**
  * Created by shaimu8 on 5/20/18.
  */
@@ -40,9 +42,8 @@ public class CatalogAdapter extends RecyclerView.Adapter<CatalogAdapter.CatalogA
         holder.tv_android.setVisibility(View.GONE);
 //        holder.tv_android.setText(android.get(position).getAndroid_version_name());
         Results item = response.results.get(position);
-        String imageUrl = "https://image.tmdb.org/t/p/" + "w500" + item.poster_path;
         Picasso.with(context)
-                .load(imageUrl)
+                .load(getImageUriForPath(context, item.poster_path))
                 .resize(240, 350)
                 .placeholder(R.mipmap.poster_image_placeholder)
                 .error(R.mipmap.poster_image_not_available)
