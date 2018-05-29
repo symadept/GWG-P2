@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ED1349D020BC803300CD00A6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1349CF20BC803300CD00A6 /* AppDelegate.m */; };
+		ED1349D620BC803300CD00A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED1349D420BC803300CD00A6 /* Main.storyboard */; };
+		ED1349D820BC803400CD00A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED1349D720BC803400CD00A6 /* Assets.xcassets */; };
+		ED1349DB20BC803400CD00A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED1349D920BC803400CD00A6 /* LaunchScreen.storyboard */; };
+		ED1349DE20BC803400CD00A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1349DD20BC803400CD00A6 /* main.m */; };
+		ED1349E820BC803400CD00A6 /* CineScanIOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1349E720BC803400CD00A6 /* CineScanIOSTests.m */; };
+		ED1349F320BC803400CD00A6 /* CineScanIOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1349F220BC803400CD00A6 /* CineScanIOSUITests.m */; };
+		ED134A0220BC810200CD00A6 /* CatalogCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED134A0120BC810200CD00A6 /* CatalogCollectionViewController.m */; };
+		ED134A0720BCB54F00CD00A6 /* MoviesPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = ED134A0620BCB54F00CD00A6 /* MoviesPresenter.m */; };
+		ED134A0E20BCCBA500CD00A6 /* MoviePosterPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = ED134A0D20BCCBA500CD00A6 /* MoviePosterPresenter.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ED1349E420BC803400CD00A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED1349C320BC803300CD00A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED1349CA20BC803300CD00A6;
+			remoteInfo = CineScanIOS;
+		};
+		ED1349EF20BC803400CD00A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED1349C320BC803300CD00A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED1349CA20BC803300CD00A6;
+			remoteInfo = CineScanIOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ED1349CB20BC803300CD00A6 /* CineScanIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CineScanIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED1349CE20BC803300CD00A6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		ED1349CF20BC803300CD00A6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		ED1349D520BC803300CD00A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ED1349D720BC803400CD00A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED1349DA20BC803400CD00A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ED1349DC20BC803400CD00A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED1349DD20BC803400CD00A6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ED1349E320BC803400CD00A6 /* CineScanIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CineScanIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED1349E720BC803400CD00A6 /* CineScanIOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CineScanIOSTests.m; sourceTree = "<group>"; };
+		ED1349E920BC803400CD00A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED1349EE20BC803400CD00A6 /* CineScanIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CineScanIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED1349F220BC803400CD00A6 /* CineScanIOSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CineScanIOSUITests.m; sourceTree = "<group>"; };
+		ED1349F420BC803400CD00A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED134A0020BC810200CD00A6 /* CatalogCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatalogCollectionViewController.h; sourceTree = "<group>"; };
+		ED134A0120BC810200CD00A6 /* CatalogCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatalogCollectionViewController.m; sourceTree = "<group>"; };
+		ED134A0620BCB54F00CD00A6 /* MoviesPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoviesPresenter.m; sourceTree = "<group>"; };
+		ED134A0820BCB57A00CD00A6 /* MoviesPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoviesPresenter.h; sourceTree = "<group>"; };
+		ED134A0C20BCCBA500CD00A6 /* MoviePosterPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoviePosterPresenter.h; sourceTree = "<group>"; };
+		ED134A0D20BCCBA500CD00A6 /* MoviePosterPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoviePosterPresenter.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED1349C820BC803300CD00A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED1349E020BC803400CD00A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED1349EB20BC803400CD00A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ED1349C220BC803300CD00A6 = {
+			isa = PBXGroup;
+			children = (
+				ED1349CD20BC803300CD00A6 /* CineScanIOS */,
+				ED1349E620BC803400CD00A6 /* CineScanIOSTests */,
+				ED1349F120BC803400CD00A6 /* CineScanIOSUITests */,
+				ED1349CC20BC803300CD00A6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ED1349CC20BC803300CD00A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED1349CB20BC803300CD00A6 /* CineScanIOS.app */,
+				ED1349E320BC803400CD00A6 /* CineScanIOSTests.xctest */,
+				ED1349EE20BC803400CD00A6 /* CineScanIOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED1349CD20BC803300CD00A6 /* CineScanIOS */ = {
+			isa = PBXGroup;
+			children = (
+				ED134A0320BCB4FE00CD00A6 /* net */,
+				ED1349CE20BC803300CD00A6 /* AppDelegate.h */,
+				ED1349CF20BC803300CD00A6 /* AppDelegate.m */,
+				ED1349D420BC803300CD00A6 /* Main.storyboard */,
+				ED134A0020BC810200CD00A6 /* CatalogCollectionViewController.h */,
+				ED134A0120BC810200CD00A6 /* CatalogCollectionViewController.m */,
+				ED1349D720BC803400CD00A6 /* Assets.xcassets */,
+				ED1349D920BC803400CD00A6 /* LaunchScreen.storyboard */,
+				ED1349DC20BC803400CD00A6 /* Info.plist */,
+				ED1349DD20BC803400CD00A6 /* main.m */,
+			);
+			path = CineScanIOS;
+			sourceTree = "<group>";
+		};
+		ED1349E620BC803400CD00A6 /* CineScanIOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				ED1349E720BC803400CD00A6 /* CineScanIOSTests.m */,
+				ED1349E920BC803400CD00A6 /* Info.plist */,
+			);
+			path = CineScanIOSTests;
+			sourceTree = "<group>";
+		};
+		ED1349F120BC803400CD00A6 /* CineScanIOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ED1349F220BC803400CD00A6 /* CineScanIOSUITests.m */,
+				ED1349F420BC803400CD00A6 /* Info.plist */,
+			);
+			path = CineScanIOSUITests;
+			sourceTree = "<group>";
+		};
+		ED134A0320BCB4FE00CD00A6 /* net */ = {
+			isa = PBXGroup;
+			children = (
+				ED134A0820BCB57A00CD00A6 /* MoviesPresenter.h */,
+				ED134A0620BCB54F00CD00A6 /* MoviesPresenter.m */,
+				ED134A0C20BCCBA500CD00A6 /* MoviePosterPresenter.h */,
+				ED134A0D20BCCBA500CD00A6 /* MoviePosterPresenter.m */,
+			);
+			path = net;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED1349CA20BC803300CD00A6 /* CineScanIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED1349F720BC803400CD00A6 /* Build configuration list for PBXNativeTarget "CineScanIOS" */;
+			buildPhases = (
+				ED1349C720BC803300CD00A6 /* Sources */,
+				ED1349C820BC803300CD00A6 /* Frameworks */,
+				ED1349C920BC803300CD00A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CineScanIOS;
+			productName = CineScanIOS;
+			productReference = ED1349CB20BC803300CD00A6 /* CineScanIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ED1349E220BC803400CD00A6 /* CineScanIOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED1349FA20BC803400CD00A6 /* Build configuration list for PBXNativeTarget "CineScanIOSTests" */;
+			buildPhases = (
+				ED1349DF20BC803400CD00A6 /* Sources */,
+				ED1349E020BC803400CD00A6 /* Frameworks */,
+				ED1349E120BC803400CD00A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED1349E520BC803400CD00A6 /* PBXTargetDependency */,
+			);
+			name = CineScanIOSTests;
+			productName = CineScanIOSTests;
+			productReference = ED1349E320BC803400CD00A6 /* CineScanIOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ED1349ED20BC803400CD00A6 /* CineScanIOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED1349FD20BC803400CD00A6 /* Build configuration list for PBXNativeTarget "CineScanIOSUITests" */;
+			buildPhases = (
+				ED1349EA20BC803400CD00A6 /* Sources */,
+				ED1349EB20BC803400CD00A6 /* Frameworks */,
+				ED1349EC20BC803400CD00A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED1349F020BC803400CD00A6 /* PBXTargetDependency */,
+			);
+			name = CineScanIOSUITests;
+			productName = CineScanIOSUITests;
+			productReference = ED1349EE20BC803400CD00A6 /* CineScanIOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED1349C320BC803300CD00A6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Mustafa Shaik";
+				TargetAttributes = {
+					ED1349CA20BC803300CD00A6 = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+					ED1349E220BC803400CD00A6 = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = ED1349CA20BC803300CD00A6;
+					};
+					ED1349ED20BC803400CD00A6 = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = ED1349CA20BC803300CD00A6;
+					};
+				};
+			};
+			buildConfigurationList = ED1349C620BC803300CD00A6 /* Build configuration list for PBXProject "CineScanIOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ED1349C220BC803300CD00A6;
+			productRefGroup = ED1349CC20BC803300CD00A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED1349CA20BC803300CD00A6 /* CineScanIOS */,
+				ED1349E220BC803400CD00A6 /* CineScanIOSTests */,
+				ED1349ED20BC803400CD00A6 /* CineScanIOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED1349C920BC803300CD00A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED1349DB20BC803400CD00A6 /* LaunchScreen.storyboard in Resources */,
+				ED1349D820BC803400CD00A6 /* Assets.xcassets in Resources */,
+				ED1349D620BC803300CD00A6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED1349E120BC803400CD00A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED1349EC20BC803400CD00A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED1349C720BC803300CD00A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED1349DE20BC803400CD00A6 /* main.m in Sources */,
+				ED134A0E20BCCBA500CD00A6 /* MoviePosterPresenter.m in Sources */,
+				ED134A0220BC810200CD00A6 /* CatalogCollectionViewController.m in Sources */,
+				ED1349D020BC803300CD00A6 /* AppDelegate.m in Sources */,
+				ED134A0720BCB54F00CD00A6 /* MoviesPresenter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED1349DF20BC803400CD00A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED1349E820BC803400CD00A6 /* CineScanIOSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED1349EA20BC803400CD00A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED1349F320BC803400CD00A6 /* CineScanIOSUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ED1349E520BC803400CD00A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED1349CA20BC803300CD00A6 /* CineScanIOS */;
+			targetProxy = ED1349E420BC803400CD00A6 /* PBXContainerItemProxy */;
+		};
+		ED1349F020BC803400CD00A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED1349CA20BC803300CD00A6 /* CineScanIOS */;
+			targetProxy = ED1349EF20BC803400CD00A6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ED1349D420BC803300CD00A6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED1349D520BC803300CD00A6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ED1349D920BC803400CD00A6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED1349DA20BC803400CD00A6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ED1349F520BC803400CD00A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		ED1349F620BC803400CD00A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ED1349F820BC803400CD00A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8R47NUS9T3;
+				INFOPLIST_FILE = CineScanIOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.symadept.CineScanIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ED1349F920BC803400CD00A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8R47NUS9T3;
+				INFOPLIST_FILE = CineScanIOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.symadept.CineScanIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ED1349FB20BC803400CD00A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8R47NUS9T3;
+				INFOPLIST_FILE = CineScanIOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.symadept.CineScanIOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CineScanIOS.app/CineScanIOS";
+			};
+			name = Debug;
+		};
+		ED1349FC20BC803400CD00A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8R47NUS9T3;
+				INFOPLIST_FILE = CineScanIOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.symadept.CineScanIOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CineScanIOS.app/CineScanIOS";
+			};
+			name = Release;
+		};
+		ED1349FE20BC803400CD00A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8R47NUS9T3;
+				INFOPLIST_FILE = CineScanIOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.symadept.CineScanIOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CineScanIOS;
+			};
+			name = Debug;
+		};
+		ED1349FF20BC803400CD00A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8R47NUS9T3;
+				INFOPLIST_FILE = CineScanIOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.symadept.CineScanIOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CineScanIOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED1349C620BC803300CD00A6 /* Build configuration list for PBXProject "CineScanIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED1349F520BC803400CD00A6 /* Debug */,
+				ED1349F620BC803400CD00A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED1349F720BC803400CD00A6 /* Build configuration list for PBXNativeTarget "CineScanIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED1349F820BC803400CD00A6 /* Debug */,
+				ED1349F920BC803400CD00A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED1349FA20BC803400CD00A6 /* Build configuration list for PBXNativeTarget "CineScanIOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED1349FB20BC803400CD00A6 /* Debug */,
+				ED1349FC20BC803400CD00A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED1349FD20BC803400CD00A6 /* Build configuration list for PBXNativeTarget "CineScanIOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED1349FE20BC803400CD00A6 /* Debug */,
+				ED1349FF20BC803400CD00A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ED1349C320BC803300CD00A6 /* Project object */;
+}
